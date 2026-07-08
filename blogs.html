@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PrintCraft | Professional Print & Copy Shop</title>
+    <meta name="description"
+        content="Premium Tailwind CSS HTML Template for Print & Copy Shops, Digital Printing, Business Cards, Flyers, Posters, Banners and Document Printing.">
+
+    <meta name="keywords"
+        content="Print Shop, Printing, Tailwind CSS, Business Cards, Flyer, Banner, HTML Template">
+
+    <meta name="author" content="PrintCraft">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PrintCraft">
+    <meta property="og:description"
+        content="Professional Print & Copy Shop HTML Template">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+
+                colors: {
+                    primary: {
+                        50: '#eff6ff',
+                        100: '#dbeafe',
+                        200: '#bfdbfe',
+                        300: '#93c5fd',
+                        400: '#60a5fa',
+                        500: '#3b82f6',
+                        600: '#2563eb',
+                        700: '#1d4ed8',
+                        800: '#1e40af',
+                        900: '#1e3a8a',
+                    },
+                },
+
+                boxShadow: {
+                    soft: '0 10px 40px rgba(0,0,0,.08)',
+                },
+
+                borderRadius: {
+                    xl2: '20px',
+                },
+            },
+        },
+    };
+</script>
+
+<!-- Prevent Theme Flicker -->
+<script>
+    if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+
+<body
+    class="pt-24 bg-white text-slate-700 font-sans antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
+
+    <!-- Skip to Content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 rounded-lg bg-primary-600 px-4 py-2 text-white">
+        Skip to Content
+    </a>
+
+    <!-- ========================= -->
+    <!-- Header Goes Here -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
+    <header
+        id="site-header"
+        class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <nav
+                class="mt-5 flex h-20 items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-6 shadow-lg backdrop-blur-xl transition-all duration-300 dark:border-slate-800 dark:bg-slate-900/90">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex flex-shrink-0 items-center gap-3">
+
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-600 text-white shadow-lg">
+
+                        <!-- Printer Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.8"
+                                d="M6 9V3h12v6M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v7H6v-7z" />
+
+                        </svg>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-xl font-bold text-slate-900 dark:text-white">
+                            PrintCraft
+                        </h2>
+
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            Print & Copy Shop
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden items-center gap-8 lg:flex">
+                    <li class="relative group">
+                        <button
+                            type="button"
+                            class="flex items-center gap-1 font-medium text-slate-700 transition hover:text-primary-600 dark:text-slate-200">
+                            Home
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transition duration-300 group-hover:rotate-180"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="absolute left-0 top-10 z-50 hidden w-72 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl group-hover:block group-focus-within:block dark:border-slate-700 dark:bg-slate-900">
+                            <a href="index.html"
+                                class="mb-3 block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <h4 class="font-semibold">Home 1</h4>
+                                <p class="mt-1 text-sm text-slate-500">Corporate Print Shop</p>
+                            </a>
+                            <a href="index-2.html"
+                                class="block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <h4 class="font-semibold">Home 2</h4>
+                                <p class="mt-1 text-sm text-slate-500">Modern Online Printing</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="font-medium transition hover:text-primary-600">About</a></li>
+                    <li><a href="services.html" class="font-medium transition hover:text-primary-600">Services</a></li>
+                    <li><a href="blogs.html" class="font-medium transition hover:text-primary-600">Blogs</a></li>
+                    <li><a href="contact.html" class="font-medium transition hover:text-primary-600">Contact</a></li>
+                    <li><a href="dashboard.html" class="font-medium transition hover:text-primary-600">Dashboard</a></li>
+                
+                </ul>
+
+                <!-- Right Side -->
+                <div class="hidden lg:flex flex-shrink-0 items-center gap-3">
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle"
+        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
+        🌙
+    </button>
+
+    <!-- RTL Toggle -->
+    <button id="rtl-toggle"
+        class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:text-white dark:hover:bg-slate-800">
+        RTL
+    </button>
+
+    <!-- Login Button -->
+    <a href="login.html"
+        class="rounded-xl bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700">
+        Login
+    </a>
+
+</div>
+                <!-- Mobile Button -->
+                <button
+                    id="mobile-menu-btn"
+                    class="rounded-xl p-2 transition hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-7 w-7"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+            </nav>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="mt-4 hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-lg dark:border-slate-800 dark:bg-slate-900 lg:hidden">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="block font-medium">Home</a></li>
+                    <li><a href="services.html" class="block font-medium">Services</a></li>
+                    <li><a href="blogs.html" class="block font-medium">Blogs</a></li>
+                    <li><a href="about.html" class="block font-medium">About</a></li>
+                    <li><a href="dashboard.html" class="block font-medium">Dashboard</a></li>
+                    <li><a href="contact.html" class="block font-medium">Contact</a></li>
+                    <li class="pt-2"><a href="login.html" class="block rounded-xl border px-4 py-2">Login</a></li>
+                    <li><a href="upload.html" class="block rounded-xl bg-primary-600 px-4 py-2 text-white text-center">Get Quote</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- Footer Goes Here -->
+    <!-- ========================= -->
+
+
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+<!-- Spacer -->
+<div class="h-30"></div>
+
+
+
+
+
+<!-- Blog Hero -->
+<section class="relative overflow-hidden bg-gray-950 text-white">
+
+    <!-- Background Glow -->
+    <div class="absolute inset-0">
+        <div class="absolute top-20 left-1/3 w-96 h-96 bg-indigo-600/20 blur-3xl rounded-full"></div>
+        <div class="absolute bottom-0 right-20 w-80 h-80 bg-purple-600/20 blur-3xl rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-24">
+
+        <!-- Badge -->
+        <div class="flex justify-center">
+            <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-gray-300 backdrop-blur">
+                📖 PrintCraft Journal
+            </span>
+        </div>
+
+        <!-- Heading -->
+        <div class="max-w-4xl mx-auto text-center mt-8">
+
+            <h1 class="text-5xl md:text-7xl font-black leading-tight">
+                Ideas Worth
+                <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+                    Printing
+                </span>
+            </h1>
+
+            <p class="mt-8 text-xl text-gray-400 leading-8 max-w-2xl mx-auto">
+                Design inspiration, branding strategies, printing guides, and
+                practical tips to help your next project stand out.
+            </p>
+
+        </div>
+
+        <!-- Search -->
+        <div class="max-w-2xl mx-auto mt-12">
+
+            <div class="flex items-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-2">
+
+                <input
+                    type="text"
+                    placeholder="Search articles..."
+                    class="flex-1 bg-transparent px-5 py-3 text-white placeholder-gray-500 outline-none">
+
+                <button
+                    class="rounded-xl bg-indigo-600 px-7 py-3 font-semibold hover:bg-indigo-700 transition">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+
+            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
+                Printing
+            </button>
+
+            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
+                Design
+            </button>
+
+            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
+                Branding
+            </button>
+
+            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
+                Business
+            </button>
+
+            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
+                Marketing
+            </button>
+
+        </div>
+
+        <!-- Featured Card -->
+        <div class="max-w-5xl mx-auto mt-20">
+
+            <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 md:p-10">
+
+                <div class="flex flex-col lg:flex-row justify-between gap-8">
+
+                    <div class="lg:w-2/3">
+
+                        <span class="inline-block rounded-full bg-indigo-500/20 px-4 py-2 text-sm text-indigo-300">
+                            🔥 Featured This Week
+                        </span>
+
+                        <h2 class="mt-6 text-4xl font-bold leading-tight">
+                            10 Design Mistakes That Make Your Prints Look Unprofessional
+                        </h2>
+
+                        <p class="mt-5 text-gray-400 leading-8">
+                            Discover the small design decisions that have the biggest
+                            impact on print quality and learn how professionals prepare
+                            files for flawless results.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 mt-8 text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="lg:w-64 flex flex-col gap-5">
+
+                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
+                            <p class="text-gray-500 text-sm">Read Time</p>
+                            <h3 class="text-3xl font-bold mt-2">8 Min</h3>
+                        </div>
+
+                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
+                            <p class="text-gray-500 text-sm">Articles</p>
+                            <h3 class="text-3xl font-bold mt-2">120+</h3>
+                        </div>
+
+                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
+                            <p class="text-gray-500 text-sm">Readers</p>
+                            <h3 class="text-3xl font-bold mt-2">15K+</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Newsletter Section -->
+<section class="py-24 bg-gray-950 relative overflow-hidden">
+
+    <!-- Background Glow -->
+    <div class="absolute inset-0">
+        <div class="absolute -top-20 left-1/4 w-96 h-96 bg-indigo-600/20 blur-3xl rounded-full"></div>
+        <div class="absolute bottom-0 right-20 w-80 h-80 bg-pink-600/20 blur-3xl rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-6">
+
+        <div class="rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl p-12 text-center">
+
+            <!-- Badge -->
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">
+                ✉️ Join Our Community
+            </span>
+
+            <!-- Heading -->
+            <h2 class="mt-6 text-4xl md:text-5xl font-bold text-white">
+                Never Miss a Printing Tip
+            </h2>
+
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400 leading-8">
+                Get fresh design inspiration, professional printing advice,
+                exclusive offers, and new blog posts delivered directly to
+                your inbox.
+            </p>
+
+            <!-- Form -->
+            <form class="mt-10 flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="flex-1 rounded-2xl bg-white/10 border border-white/10 px-6 py-4 text-white placeholder-gray-500 outline-none focus:border-indigo-500">
+
+                <button
+                    class="rounded-2xl bg-indigo-600 px-8 py-4 font-semibold text-white hover:bg-indigo-700 transition">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <!-- Benefits -->
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+
+                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+                    <div class="text-3xl">📚</div>
+                    <h3 class="mt-4 font-semibold text-white">
+                        Weekly Articles
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Practical printing and design tips every week.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+                    <div class="text-3xl">🎁</div>
+                    <h3 class="mt-4 font-semibold text-white">
+                        Exclusive Offers
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Subscriber-only discounts and special promotions.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+                    <div class="text-3xl">🚀</div>
+                    <h3 class="mt-4 font-semibold text-white">
+                        Early Access
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Be the first to read our newest guides and tutorials.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--=====================================
+Footer Section Start
+======================================-->
+
+<footer class="relative overflow-hidden bg-slate-950 text-slate-300">
+
+    <!-- Top Border -->
+    <div class="h-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600"></div>
+
+    <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Company Info -->
+            <div>
+
+                <a href="index.html" class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 9V3h12v6M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v7H6v-7z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold text-white">
+
+                            PrintCraft
+
+                        </h3>
+
+                        <p class="text-sm text-slate-400">
+
+                            Print & Copy Shop
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <p class="mt-6 leading-7 text-slate-400">
+
+                    Professional online printing services for businesses,
+                    students, and individuals. Upload files, customize your
+                    print options, and receive premium-quality prints with fast
+                    turnaround.
+
+                </p>
+
+                <!-- Social -->
+
+                <div class="mt-8 flex gap-3">
+
+                    <a href="#"
+                        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 transition hover:border-blue-500 hover:bg-blue-600 hover:text-white">
+
+                        <!-- Facebook SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 12A10 10 0 1010.5 21.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.9h2.8l-.5 2.9h-2.3v7A10 10 0 0022 12z"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="#"
+                        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 transition hover:border-sky-500 hover:bg-sky-500 hover:text-white">
+
+                        <!-- X / Twitter -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6-5.2 6H3.7l7.3-8.3L1 2h6.3l4.3 5.5L18.9 2z"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="#"
+                        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 transition hover:border-pink-500 hover:bg-pink-500 hover:text-white">
+
+                        <!-- Instagram -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6-.8a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="#"
+                        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 transition hover:border-blue-700 hover:bg-blue-700 hover:text-white">
+
+                        <!-- LinkedIn -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5A2.48 2.48 0 012.5 6 2.48 2.48 0 010 3.5 2.48 2.48 0 012.5 1a2.48 2.48 0 012.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6V24h-4v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24h-4V8z"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+
+                <h4 class="mb-6 text-xl font-bold text-white">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-4">
+
+                    <li><a href="index.html" class="transition hover:text-blue-400">Home</a></li>
+                    <li><a href="about.html" class="transition hover:text-blue-400">About Us</a></li>
+                    <li><a href="services.html" class="transition hover:text-blue-400">Services</a></li>
+                    
+                    <li><a href="contact.html" class="transition hover:text-blue-400">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div>
+
+                <h4 class="mb-6 text-xl font-bold text-white">
+                    Printing Services
+                </h4>
+
+                <ul class="space-y-4">
+
+                    <li><a href="#" class="transition hover:text-blue-400">Document Printing</a></li>
+                    <li><a href="#" class="transition hover:text-blue-400">Business Cards</a></li>
+                    <li><a href="#" class="transition hover:text-blue-400">Flyers & Brochures</a></li>
+                    <li><a href="#" class="transition hover:text-blue-400">Posters & Banners</a></li>
+                    <li><a href="#" class="transition hover:text-blue-400">Photo Printing</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+
+                <h4 class="mb-6 text-xl font-bold text-white">
+                    Newsletter
+                </h4>
+
+                <p class="mb-6 text-slate-400">Subscribe to receive updates, promotions, and exclusive printing offers.</p>
+
+                <form class="space-y-4">
+
+                    <input type="email" placeholder="Enter your email" class="w-full rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-blue-500 focus:outline-none">
+
+                    <button class="w-full rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:shadow-xl">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="border-t border-slate-800">
+
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-slate-400 md:flex-row">
+
+            <p>© 2025 PrintCraft. All Rights Reserved.</p>
+
+            <div class="flex gap-6">
+
+                <a href="#" class="transition hover:text-white">Privacy Policy</a>
+
+                <a href="#" class="transition hover:text-white">Terms & Conditions</a>
+
+                <a href="#" class="transition hover:text-white">Support</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--=====================================
+Footer Section End
+======================================-->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

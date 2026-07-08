@@ -38,68 +38,60 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
 
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif']
+                colors: {
+                    primary: {
+                        50: '#eff6ff',
+                        100: '#dbeafe',
+                        200: '#bfdbfe',
+                        300: '#93c5fd',
+                        400: '#60a5fa',
+                        500: '#3b82f6',
+                        600: '#2563eb',
+                        700: '#1d4ed8',
+                        800: '#1e40af',
+                        900: '#1e3a8a',
                     },
+                },
 
-                    colors: {
+                boxShadow: {
+                    soft: '0 10px 40px rgba(0,0,0,.08)',
+                },
 
-                        primary: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            200: '#bfdbfe',
-                            300: '#93c5fd',
-                            400: '#60a5fa',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a'
-                        }
+                borderRadius: {
+                    xl2: '20px',
+                },
+            },
+        },
+    };
+</script>
 
-                    },
-
-                    boxShadow: {
-
-                        soft: '0 10px 40px rgba(0,0,0,.08)',
-
-                    },
-
-                    borderRadius: {
-
-                        xl2: '20px'
-
-                    }
-
-                }
-            }
-        }
-    </script>
-
-    <!-- Prevent Theme Flicker -->
-    <script>
-        if (
-            localStorage.theme === 'dark' ||
-            (!('theme' in localStorage) &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches)
-        ) {
-            document.documentElement.classList.add('dark');
-        }
-    </script>
-
-</head>
+<!-- Prevent Theme Flicker -->
+<script>
+    if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark');
+    }
+</script>
 
 <body
-    class="bg-white text-slate-700 font-sans antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
+    class="pt-24 bg-white text-slate-700 font-sans antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
 
     <!-- Skip to Content -->
     <a href="#main-content"
@@ -111,7 +103,153 @@
     <!-- Header Goes Here -->
     <!-- ========================= -->
 
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
 
+    <header
+        id="site-header"
+        class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <nav
+                class="mt-5 flex h-20 items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-6 shadow-lg backdrop-blur-xl transition-all duration-300 dark:border-slate-800 dark:bg-slate-900/90">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex flex-shrink-0 items-center gap-3">
+
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-600 text-white shadow-lg">
+
+                        <!-- Printer Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.8"
+                                d="M6 9V3h12v6M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v7H6v-7z" />
+
+                        </svg>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-xl font-bold text-slate-900 dark:text-white">
+                            PrintCraft
+                        </h2>
+
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            Print & Copy Shop
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden items-center gap-8 lg:flex">
+                    <li class="relative group">
+                        <button
+                            type="button"
+                            class="flex items-center gap-1 font-medium text-slate-700 transition hover:text-primary-600 dark:text-slate-200">
+                            Home
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transition duration-300 group-hover:rotate-180"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="absolute left-0 top-10 z-50 hidden w-72 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl group-hover:block group-focus-within:block dark:border-slate-700 dark:bg-slate-900">
+                            <a href="index.html"
+                                class="mb-3 block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <h4 class="font-semibold">Home 1</h4>
+                                <p class="mt-1 text-sm text-slate-500">Corporate Print Shop</p>
+                            </a>
+                            <a href="index-2.html"
+                                class="block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <h4 class="font-semibold">Home 2</h4>
+                                <p class="mt-1 text-sm text-slate-500">Modern Online Printing</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="font-medium transition hover:text-primary-600">About</a></li>
+                    <li><a href="services.html" class="font-medium transition hover:text-primary-600">Services</a></li>
+                    <li><a href="blogs.html" class="font-medium transition hover:text-primary-600">Blogs</a></li>
+                    <li><a href="contact.html" class="font-medium transition hover:text-primary-600">Contact</a></li>
+                    <li><a href="dashboard.html" class="font-medium transition hover:text-primary-600">Dashboard</a></li>
+                
+                </ul>
+
+                <!-- Right Side -->
+                <div class="hidden lg:flex flex-shrink-0 items-center gap-3">
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle"
+        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
+        🌙
+    </button>
+
+    <!-- RTL Toggle -->
+    <button id="rtl-toggle"
+        class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:text-white dark:hover:bg-slate-800">
+        RTL
+    </button>
+
+    <!-- Login Button -->
+    <a href="login.html"
+        class="rounded-xl bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700">
+        Login
+    </a>
+
+</div>
+                <!-- Mobile Button -->
+                <button
+                    id="mobile-menu-btn"
+                    class="rounded-xl p-2 transition hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-7 w-7"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+            </nav>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="mt-4 hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-lg dark:border-slate-800 dark:bg-slate-900 lg:hidden">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="block font-medium">Home</a></li>
+                    <li><a href="services.html" class="block font-medium">Services</a></li>
+                    <li><a href="blogs.html" class="block font-medium">Blogs</a></li>
+                    <li><a href="about.html" class="block font-medium">About</a></li>
+                    <li><a href="dashboard.html" class="block font-medium">Dashboard</a></li>
+                    <li><a href="contact.html" class="block font-medium">Contact</a></li>
+                    <li class="pt-2"><a href="login.html" class="block rounded-xl border px-4 py-2">Login</a></li>
+                    <li><a href="upload.html" class="block rounded-xl bg-primary-600 px-4 py-2 text-white text-center">Get Quote</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
 
     <main id="main-content">
 
@@ -119,6 +257,8 @@
 
 
     </main>
+
+
 
 
 
@@ -130,210 +270,6 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-</body>
-
-
-<!-- ========================= -->
-<!-- Header -->
-<!-- ========================= -->
-
-<header
-    id="site-header"
-    class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
-
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        <nav
-            class="mt-5 flex h-20 items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-6 shadow-lg backdrop-blur-xl transition-all duration-300 dark:border-slate-800 dark:bg-slate-900/90">
-
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center gap-3">
-
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-600 text-white shadow-lg">
-
-                    <!-- Printer Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-
-                        <path stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.8"
-                            d="M6 9V3h12v6M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v7H6v-7z" />
-
-                    </svg>
-
-                </div>
-
-                <div>
-
-                    <h2 class="text-xl font-bold text-slate-900 dark:text-white">
-                        PrintCraft
-                    </h2>
-
-                    <p class="text-xs text-slate-500 dark:text-slate-400">
-                        Print & Copy Shop
-                    </p>
-
-                </div>
-
-            </a>
-
-            <!-- Desktop Menu -->
-            <ul class="hidden items-center gap-8 lg:flex">
-
-                <!-- Home Dropdown -->
-                <li class="relative group">
-
-                    <button
-                        class="flex items-center gap-1 font-medium text-slate-700 transition hover:text-primary-600 dark:text-slate-200">
-
-                        Home
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4 transition duration-300 group-hover:rotate-180"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-
-                            <path stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-
-                        </svg>
-
-                    </button>
-
-                    <!-- Dropdown -->
-                    <div
-                        class="absolute left-0 top-10 hidden w-72 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl group-hover:block dark:border-slate-700 dark:bg-slate-900">
-
-                        <a href="index.html"
-                            class="mb-3 block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
-
-                            <h4 class="font-semibold">
-                                Home 1
-                            </h4>
-
-                            <p class="mt-1 text-sm text-slate-500">
-                                Corporate Print Shop
-                            </p>
-
-                        </a>
-
-                        <a href="index-2.html"
-                            class="block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
-
-                            <h4 class="font-semibold">
-                                Home 2
-                            </h4>
-
-                            <p class="mt-1 text-sm text-slate-500">
-                                Modern Online Printing
-                            </p>
-
-                        </a>
-
-                    </div>
-
-                </li>
-
-                <li>
-                    <a href="services.html"
-                        class="font-medium transition hover:text-primary-600">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pricing.html"
-                        class="font-medium transition hover:text-primary-600">
-                        Pricing
-                    </a>
-                </li>
-
-                <li>
-                    <a href="track-order.html"
-                        class="font-medium transition hover:text-primary-600">
-                        Track Order
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html"
-                        class="font-medium transition hover:text-primary-600">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html"
-                        class="font-medium transition hover:text-primary-600">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- Right Side -->
-            <div class="hidden items-center gap-3 lg:flex">
-
-                <!-- Dark Mode -->
-
-                <button
-                    id="theme-toggle"
-                    class="rounded-xl border border-slate-200 p-3 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
-
-                    🌙
-
-                </button>
-
-                <a href="login.html"
-                    class="rounded-xl border border-slate-300 px-5 py-2.5 font-medium transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
-
-                    Login
-
-                </a>
-
-                <a href="upload.html"
-                    class="rounded-xl bg-primary-600 px-5 py-2.5 font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-primary-700">
-
-                    Get Quote
-
-                </a>
-
-            </div>
-
-            <!-- Mobile Button -->
-            <button
-                id="mobile-menu-btn"
-                class="rounded-xl p-2 transition hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden">
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-7 w-7"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-
-                </svg>
-
-            </button>
-
-        </nav>
-
-    </div>
-
-</header>
 
 <!-- Spacer -->
 <div class="h-32"></div>
@@ -433,6 +369,12 @@ Breadcrumb Section Start
     </div>
 
 </section>
+
+    <!-- Main JS (moved to end) -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
 
 
 <!-- ================================= -->
@@ -1460,7 +1402,6 @@ Footer Section Start
                     <li><a href="index.html" class="transition hover:text-blue-400">Home</a></li>
                     <li><a href="about.html" class="transition hover:text-blue-400">About Us</a></li>
                     <li><a href="services.html" class="transition hover:text-blue-400">Services</a></li>
-                    <li><a href="pricing.html" class="transition hover:text-blue-400">Pricing</a></li>
                     <li><a href="contact.html" class="transition hover:text-blue-400">Contact</a></li>
 
                 </ul>
