@@ -1275,6 +1275,68 @@ Footer Section End
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+<script>
+const rtlBtn = document.getElementById("rtl-toggle");
 
+function applyDirection(dir) {
+    document.documentElement.setAttribute("dir", dir);
+
+    if (dir === "rtl") {
+        rtlBtn.textContent = "LTR";
+    } else {
+        rtlBtn.textContent = "RTL";
+    }
+}
+
+const savedDir = localStorage.getItem("direction") || "ltr";
+applyDirection(savedDir);
+
+rtlBtn.addEventListener("click", () => {
+    const newDir =
+        document.documentElement.getAttribute("dir") === "ltr"
+            ? "rtl"
+            : "ltr";
+
+    localStorage.setItem("direction", newDir);
+    applyDirection(newDir);
+});
+</script>
+<script>
+const themeToggle = document.getElementById("theme-toggle");
+
+function applyTheme(theme) {
+    if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+        themeToggle.textContent = "☀️";
+    } else {
+        document.documentElement.classList.remove("dark");
+        themeToggle.textContent = "🌙";
+    }
+}
+
+const savedTheme =
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+applyTheme(savedTheme);
+
+themeToggle.addEventListener("click", () => {
+    const newTheme = document.documentElement.classList.contains("dark")
+        ? "light"
+        : "dark";
+
+    localStorage.setItem("theme", newTheme);
+    applyTheme(newTheme);
+});
+</script>
+
+</script>
+<script>const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
 </body>
 </html>
