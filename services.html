@@ -248,17 +248,7 @@
             </div>
 
         </div>
-<script>
-if (
-    localStorage.getItem("theme") === "dark" ||
-    (!localStorage.getItem("theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-    document.documentElement.classList.add("dark");
-} else {
-    document.documentElement.classList.remove("dark");
-}
-</script>
+
     </header>
 
 
@@ -281,7 +271,7 @@ if (
 
 <!-- ================= HERO SECTION ================= -->
 <section class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-    <div class="mx-auto max-w-7xl px-6 py-20 lg:py-28">
+   <div class="mx-auto max-w-7xl px-6 pt-6 pb-20 lg:pt-8 lg:pb-28">
 
         <div class="grid items-center gap-16 lg:grid-cols-2">
 
@@ -1045,9 +1035,14 @@ themeToggle.addEventListener("click", () => {
 
 
 
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-
-
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
 </body>
 </html>
 

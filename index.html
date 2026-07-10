@@ -91,11 +91,11 @@
 </script>
 
 <body
-    class="pt-24 bg-white text-slate-700 font-sans antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
+    class="pt-24 bg-white text-black font-sans antialiased transition-colors duration-300 dark:bg-black dark:text-white">
 
     <!-- Skip to Content -->
     <a href="#main-content"
-        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 rounded-lg bg-primary-600 px-4 py-2 text-white">
+        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 rounded-lg bg-white px-4 py-2 text-black">
         Skip to Content
     </a>
 
@@ -256,125 +256,81 @@
 
 
 
-    </main>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- Footer Goes Here -->
-    <!-- ========================= -->
-
-
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-
-<!-- Spacer -->
-<div class="h-32"></div>
 
 
 
 <!--=====================================
 Breadcrumb Section Start
 ======================================-->
+<!-- Hero Section -->
+<section class="relative py-28 overflow-hidden bg-cover bg-center"
+    style="background-image:linear-gradient(rgba(15,23,42,.75),rgba(30,41,59,.75)),url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1600&q=80');">
 
-<section class="relative overflow-hidden py-20" style="background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.82), rgba(30, 64, 175, 0.75)), url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
-
-    <!-- Background Decoration -->
+    <!-- Overlay Shapes -->
     <div class="absolute inset-0">
-
-        <div class="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
-
-        <div class="absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl"></div>
-
+        <div class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative w-full px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
 
-        <div class="text-center">
+        <!-- Small Badge -->
+        <span
+            class="inline-block rounded-full bg-blue-600/20 border border-blue-400/30 px-5 py-2 text-sm font-semibold text-blue-200">
+            ✨ Professional Printing Services
+        </span>
 
-            <!-- Page Title -->
-            <h1 class="text-4xl font-extrabold text-white md:text-5xl">
-                Our Services
-            </h1>
+        <!-- Heading -->
+        <h1 class="mt-6 text-5xl md:text-6xl font-extrabold text-white leading-tight">
+            Print <span class="text-blue-400">Craft</span>
+        </h1>
 
-            <!-- Subtitle -->
-            <p class="mx-auto mt-5 max-w-2xl text-lg text-slate-200">
-                Professional printing services for businesses, students, and individuals with premium quality and fast turnaround.
-            </p>
+        <!-- Description -->
+        <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-200 leading-8">
+            From document printing to banners, business cards, posters, and custom products,
+            we provide premium-quality printing with fast turnaround and affordable pricing.
+        </p>
 
-            <!-- Breadcrumb -->
-            <nav class="mt-8 flex justify-center">
+        <!-- Buttons -->
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
 
-                <ol class="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-6 py-3 shadow-lg backdrop-blur-md">
+            <a href="contact.html"
+                class="rounded-xl bg-blue-600 px-8 py-3 font-semibold text-white transition hover:bg-blue-700">
+                Get a Quote
+            </a>
 
-                    <!-- Home -->
-                    <li>
-
-                        <a href="index.html"
-                            class="flex items-center gap-2 text-slate-100 transition duration-300 hover:text-blue-300">
-
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 10.5L12 3l9 7.5V21a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V10.5z"/>
-
-                            </svg>
-
-                            Home
-
-                        </a>
-
-                    </li>
-
-                    <!-- Divider -->
-                    <li class="mx-3 text-slate-300">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4 rtl:rotate-180"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-
-                            <path stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"/>
-
-                        </svg>
-
-                    </li>
-
-                    <!-- Current Page -->
-                    <li class="font-semibold text-blue-300">
-
-                        Services
-
-                    </li>
-
-                </ol>
-
-            </nav>
+            <a href="services.html"
+                class="rounded-xl border border-white/30 bg-white/10 px-8 py-3 font-semibold text-white backdrop-blur-md transition hover:bg-white/20">
+                Explore Services
+            </a>
 
         </div>
+
+        <!-- Breadcrumb -->
+        <nav class="mt-12 flex justify-center">
+
+            <ol class="flex items-center gap-3 rounded-full bg-white/10 px-6 py-3 backdrop-blur-md">
+
+                <li>
+                    <a href="index.html" class="text-slate-200 hover:text-blue-300">
+                        Home
+                    </a>
+                </li>
+
+                <li class="text-slate-400">/</li>
+
+                <li class="text-blue-300 font-semibold">
+                    Services
+                </li>
+
+            </ol>
+
+        </nav>
 
     </div>
 
 </section>
 
-    <!-- Main JS (moved to end) -->
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
 
 
 <!-- ================================= -->
@@ -382,153 +338,45 @@ Breadcrumb Section Start
 <!-- ================================= -->
 
 <section class="relative overflow-hidden bg-white py-20 dark:bg-slate-950">
-
+ 
     <!-- Background -->
     <div class="absolute inset-0 -z-10 overflow-hidden">
 
-        <div
-            class="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-blue-200 opacity-40 blur-3xl dark:bg-blue-900">
-        </div>
+        <div class="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-blue-200 opacity-40 blur-3xl dark:bg-blue-900"></div>
 
-        <div
-            class="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-cyan-200 opacity-40 blur-3xl dark:bg-cyan-900">
-        </div>
-
-    </div>
-
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-
-        <div class="grid items-center gap-16 lg:grid-cols-2">
-
-            <!-- Left Content -->
-            <div>
-
-                <!-- Badge -->
-                <span
-                    class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-5 py-2 text-sm font-semibold text-blue-700 dark:border-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-
+        <div class="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-cyan-200 opacity-40 blur-3xl dark:bg-cyan-900"><
+                <span class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-5 py-2 text-sm font-semibold text-blue-700 dark:border-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
                     Professional Printing Solutions
-
                 </span>
 
                 <!-- Heading -->
-                <h1
-                    class="mt-8 text-5xl font-extrabold leading-tight text-slate-900 dark:text-white lg:text-6xl">
-
+                <h1 class="mt-8 text-5xl font-extrabold leading-tight text-slate-900 dark:text-white lg:text-6xl">
                     Fast & Reliable
-
-                    <span
-                        class="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-
+                    <span class="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                         Printing Services
-
                     </span>
-
                     For Every Business
-
                 </h1>
 
                 <!-- Description -->
-                <p
-                    class="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-
+                <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-400">
                     Print business cards, flyers, banners, posters, brochures,
                     photo prints, and more with exceptional quality and fast
                     turnaround. Upload your files online and track your order
                     in real time.
-
                 </p>
 
                 <!-- Buttons -->
                 <div class="mt-10 flex flex-wrap gap-4">
 
                     <a href="upload.html"
-                        class="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl">
-
-                        Upload Files
-
-                    </a>
+                        class="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-blue-700">
+                        Upload Files          </a>
 
                     <a href="pricing.html"
-                        class="rounded-xl border border-slate-300 px-8 py-4 font-semibold transition duration-300 hover:border-blue-600 hover:bg-blue-50 dark:border-slate-700 dark:hover:bg-slate-800">
-
+                        class="rounded-xl border border-slate-300 px-8 py-4 font-semibold transition hover:border-blue-600 hover:bg-blue-50 dark:border-slate-700 dark:hover:bg-slate-800">
                         View Pricing
-
                     </a>
-
-                </div>
-
-                <!-- Features -->
-                <div
-                    class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-
-                    <div class="flex items-center gap-3">
-
-                        <div
-                            class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-
-                            ✓
-
-                        </div>
-
-                        <span class="font-medium">
-
-                            Same Day Printing
-
-                        </span>
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        <div
-                            class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-
-                            ✓
-
-                        </div>
-
-                        <span class="font-medium">
-
-                            Premium Quality
-
-                        </span>
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        <div
-                            class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-
-                            ✓
-
-                        </div>
-
-                        <span class="font-medium">
-
-                            Easy Online Upload
-
-                        </span>
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        <div
-                            class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-
-                            ✓
-
-                        </div>
-
-                        <span class="font-medium">
-
-                            Live Order Tracking
-
-                        </span>
-
-                    </div>
 
                 </div>
 
@@ -537,179 +385,10 @@ Breadcrumb Section Start
             <!-- Right Side -->
             <div class="relative">
 
-                <!-- Floating Card -->
-                <div
-                    class="rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
+                <!-- Print Preview Card -->
+                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
 
-                    <div class="flex items-center justify-between">
-
-                        <h3
-                            class="text-xl font-bold text-slate-900 dark:text-white">
-
-                            Print Job Preview
-
-                        </h3>
-
-                        <span
-                            class="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
-
-                            Ready
-
-                        </span>
-
-                    </div>
-
-                    <div class="mt-8 space-y-5">
-
-                        <div>
-
-                            <p class="text-sm text-slate-500">
-
-                                File Name
-
-                            </p>
-
-                            <h4 class="font-semibold">
-
-                                Company_Profile.pdf
-
-                            </h4>
-
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-5">
-
-                            <div>
-
-                                <p class="text-sm text-slate-500">
-
-                                    Paper Size
-
-                                </p>
-
-                                <h4 class="font-semibold">
-
-                                    A4
-
-                                </h4>
-
-                            </div>
-
-                            <div>
-
-                                <p class="text-sm text-slate-500">
-
-                                    Print
-
-                                </p>
-
-                                <h4 class="font-semibold">
-
-                                    Color
-
-                                </h4>
-
-                            </div>
-
-                            <div>
-
-                                <p class="text-sm text-slate-500">
-
-                                    Binding
-
-                                </p>
-
-                                <h4 class="font-semibold">
-
-                                    Spiral
-
-                                </h4>
-
-                            </div>
-
-                            <div>
-
-                                <p class="text-sm text-slate-500">
-
-                                    Quantity
-
-                                </p>
-
-                                <h4 class="font-semibold">
-
-                                    100 Copies
-
-                                </h4>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="rounded-2xl bg-slate-100 p-5 dark:bg-slate-800">
-
-                            <div
-                                class="flex items-center justify-between">
-
-                                <span>Total Price</span>
-
-                                <span
-                                    class="text-2xl font-bold text-blue-600">
-
-                                    $24.90
-
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                        <button
-                            class="w-full rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-
-                            Start Printing
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Floating Badge -->
-                <div
-                    class="absolute -top-8 -right-6 hidden rounded-2xl bg-white p-5 shadow-xl dark:bg-slate-900 lg:block">
-
-                    <p class="text-sm text-slate-500">
-
-                        Happy Customers
-
-                    </p>
-
-                    <h2
-                        class="text-3xl font-bold text-blue-600">
-
-                        12K+
-
-                    </h2>
-
-                </div>
-
-                <!-- Floating Badge -->
-                <div
-                    class="absolute -bottom-8 -left-6 hidden rounded-2xl bg-white p-5 shadow-xl dark:bg-slate-900 lg:block">
-
-                    <p class="text-sm text-slate-500">
-
-                        Orders Printed
-
-                    </p>
-
-                    <h2
-                        class="text-3xl font-bold text-cyan-600">
-
-                        450K+
-
-                    </h2>
+                    <!-- Continue your remaining code here -->
 
                 </div>
 
@@ -720,8 +399,6 @@ Breadcrumb Section Start
     </div>
 
 </section>
-
-
 
 <!--=====================================
 Services Section Start
@@ -1276,7 +953,7 @@ Call To Action Section Start
 Call To Action Section End
 ======================================-->
 
-
+</main>
 
 
 <!--=====================================
@@ -1498,9 +1175,12 @@ Footer Section Start
 Footer Section End
 ======================================-->
 
+    <!-- Main JS (moved to end) -->
+    <script src="main.js"></script>
+
 
  <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    
 <script>
 const rtlBtn = document.getElementById("rtl-toggle");
 
@@ -1557,7 +1237,7 @@ themeToggle.addEventListener("click", () => {
 </script>
 
 
-</script>
+
 <script>const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 

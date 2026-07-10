@@ -197,10 +197,21 @@
                 <div class="hidden lg:flex flex-shrink-0 items-center gap-3">
 
     <!-- Theme Toggle -->
-    <button id="theme-toggle"
-        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
-        🌙
-    </button>
+<button id="theme-toggle"
+    class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">
+    🌙
+</button>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- RTL Toggle -->
     <button id="rtl-toggle"
@@ -250,11 +261,6 @@
         </div>
 
     </header>
-
-
-
-
-
 
 
 
@@ -700,35 +706,90 @@
     <div class="max-w-7xl mx-auto px-6">
 
         <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto mb-14">
+        <section class="py-20 bg-white dark:bg-slate-950">
 
-            <span class="inline-block px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 text-sm font-semibold">
-                📍 Visit Our Store
-            </span>
+    <div class="max-w-7xl mx-auto px-6">
 
-            <h2 class="mt-5 text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-                Find Us Easily
-            </h2>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Drop by our print shop for instant printing, document services,
-                photo prints, laminations, and much more.
-            </p>
+            <!-- Left Content -->
+            <div>
+
+                <span class="inline-block px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 text-sm font-semibold">
+                    📍 Visit Our Store
+                </span>
+
+                <h2 class="mt-5 text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                    Find Us Easily
+                </h2>
+
+                <p class="mt-5 text-lg text-gray-600 dark:text-gray-400 leading-8">
+                    Drop by our print shop for instant printing, document services,
+                    photo prints, laminations, banners, business cards, and much more.
+                </p>
+
+                <div class="mt-10 space-y-6">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot text-blue-600"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-lg dark:text-white">
+                                Address
+                            </h4>
+
+                            <p class="text-gray-600 dark:text-gray-400">
+                                123 Print Street,<br>
+                                Chennai, Tamil Nadu - 600001
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                            <i class="fa-solid fa-clock text-green-600"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-lg dark:text-white">
+                                Working Hours
+                            </h4>
+
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Monday - Saturday<br>
+                                9:00 AM - 8:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Map -->
+            <div>
+
+                <div class="overflow-hidden rounded-3xl shadow-2xl">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
+                        class="w-full h-[400px]"
+                        style="border:0;"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- Map Container -->
-        <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+    </div>
 
-            <!-- Google Map -->
-            <iframe
-                class="w-full h-[600px]"
-                src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
-
-
+</section>
             <!-- Right Side Info Card -->
 <div class="space-y-6">
 
@@ -1051,65 +1112,59 @@ Footer Section End
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 <script>
-const rtlBtn = document.getElementById("rtl-toggle");
+const mobileRTL = document.getElementById("mobile-rtl-toggle");
 
-function applyDirection(dir) {
-    document.documentElement.setAttribute("dir", dir);
+if (mobileRTL) {
 
-    if (dir === "rtl") {
-        rtlBtn.textContent = "LTR";
-    } else {
-        rtlBtn.textContent = "RTL";
-    }
+    mobileRTL.addEventListener("click", () => {
+
+        document.documentElement.dir =
+            document.documentElement.dir === "rtl" ? "ltr" : "rtl";
+
+    });
+
 }
-
-const savedDir = localStorage.getItem("direction") || "ltr";
-applyDirection(savedDir);
-
-rtlBtn.addEventListener("click", () => {
-    const newDir =
-        document.documentElement.getAttribute("dir") === "ltr"
-            ? "rtl"
-            : "ltr";
-
-    localStorage.setItem("direction", newDir);
-    applyDirection(newDir);
-});
 </script>
+
+// Mobile Theme Button
+<script>const mobileTheme = document.getElementById("mobile-theme-toggle");
+
+if (mobileTheme) {
+
+    mobileTheme.textContent = document.documentElement.classList.contains("dark")
+        ? "☀️"
+        : "🌙";
+
+    mobileTheme.addEventListener("click", () => {
+
+        document.documentElement.classList.toggle("dark");
+
+        if (document.documentElement.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+            mobileTheme.textContent = "☀️";
+
+            if (themeToggle) themeToggle.textContent = "☀️";
+        } else {
+            localStorage.setItem("theme", "light");
+            mobileTheme.textContent = "🌙";
+
+            if (themeToggle) themeToggle.textContent = "🌙";
+        }
+
+    });
+
+}</script>
+
+
+
+
+
+
 <script>
-const themeToggle = document.getElementById("theme-toggle");
-
-function applyTheme(theme) {
-    if (theme === "dark") {
-        document.documentElement.classList.add("dark");
-        themeToggle.textContent = "☀️";
-    } else {
-        document.documentElement.classList.remove("dark");
-        themeToggle.textContent = "🌙";
-    }
-}
-
-const savedTheme =
-    localStorage.getItem("theme") ||
-    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-
-applyTheme(savedTheme);
-
-themeToggle.addEventListener("click", () => {
-    const newTheme = document.documentElement.classList.contains("dark")
-        ? "light"
-        : "dark";
-
-    localStorage.setItem("theme", newTheme);
-    applyTheme(newTheme);
-});
-</script>
-
-</script>
-<script>const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
-mobileMenuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
 </script>
