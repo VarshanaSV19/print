@@ -261,8 +261,7 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
-<!-- Spacer -->
-<div class="h-32"></div>
+
 
 
 
@@ -270,39 +269,48 @@
 
 
 <!-- ================= HERO SECTION ================= -->
-<section class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-   <div class="mx-auto max-w-7xl px-6 pt-6 pb-20 lg:pt-8 lg:pb-28">
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
 
-        <div class="grid items-center gap-16 lg:grid-cols-2">
+    <!-- Background Blur -->
+    <div class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-blue-400/20 blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-indigo-400/20 blur-3xl"></div>
 
-            <!-- Left Content -->
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+
+        <div class="grid items-center gap-14 lg:grid-cols-2">
+
+            <!-- LEFT -->
             <div>
 
-                <span class="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                <span class="inline-flex items-center gap-2 rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
                     🚀 Fast • Affordable • Professional
                 </span>
 
-                <h1 class="mt-6 text-5xl font-extrabold leading-tight text-slate-900 dark:text-white lg:text-6xl">
-                    High-Quality
-                    <span class="text-blue-600">Printing Services</span>
-                    for Every Need
+                <h1 class="mt-6 text-5xl font-extrabold leading-tight text-slate-900 dark:text-white lg:text-7xl">
+                    Premium
+                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                        Printing
+                    </span>
+                    Solutions
+                    <br>
+                    For Everyone
                 </h1>
 
                 <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-                    From document printing and business cards to banners and custom gifts,
-                    PrintCraft delivers premium quality with fast turnaround and affordable pricing.
+                    Print documents, business cards, banners, posters and custom products
+                    with lightning-fast delivery and unbeatable quality.
                 </p>
 
                 <!-- Buttons -->
                 <div class="mt-10 flex flex-wrap gap-4">
 
-                    <a href="upload.html"
-                        class="rounded-xl bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition duration-300 hover:bg-blue-700 hover:shadow-xl">
+                    <a href="#"
+                        class="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-1 hover:bg-blue-700">
                         Upload Files →
                     </a>
 
-                    <a href="pricing.html"
-                        class="rounded-xl border-2 border-blue-600 px-8 py-4 text-lg font-semibold text-blue-600 transition duration-300 hover:bg-blue-600 hover:text-white">
+                    <a href="#"
+                        class="rounded-xl border border-slate-300 bg-white px-8 py-4 font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
                         View Pricing
                     </a>
 
@@ -311,24 +319,30 @@
                 <!-- Stats -->
                 <div class="mt-14 grid grid-cols-3 gap-6">
 
-                    <div>
-                        <h2 class="text-3xl font-bold text-blue-600">10K+</h2>
-                        <p class="mt-2 text-slate-600 dark:text-slate-400">
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            10K+
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
                             Orders Completed
                         </p>
                     </div>
 
-                    <div>
-                        <h2 class="text-3xl font-bold text-blue-600">99%</h2>
-                        <p class="mt-2 text-slate-600 dark:text-slate-400">
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            99%
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
                             Happy Customers
                         </p>
                     </div>
 
-                    <div>
-                        <h2 class="text-3xl font-bold text-blue-600">24/7</h2>
-                        <p class="mt-2 text-slate-600 dark:text-slate-400">
-                            Online Support
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            24/7
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
+                            Support
                         </p>
                     </div>
 
@@ -336,25 +350,47 @@
 
             </div>
 
-            <!-- Right Side -->
+            <!-- RIGHT -->
             <div class="relative">
 
                 <!-- Main Image -->
                 <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
-                    alt="Printing Service"
-                    class="rounded-3xl shadow-2xl">
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
+                    alt=""
+                    class="rounded-[32px] shadow-2xl ring-8 ring-white dark:ring-slate-800">
 
-                <!-- Card 1 -->
-                <div class="absolute -top-6 -left-6 rounded-2xl bg-white p-5 shadow-xl dark:bg-slate-800">
-                    <p class="text-sm text-slate-500">⭐ Customer Rating</p>
-                    <h3 class="text-2xl font-bold text-blue-600">4.9 / 5</h3>
+                <!-- Floating Card -->
+                <div class="absolute left-6 top-6 rounded-2xl bg-white/90 p-5 shadow-2xl backdrop-blur dark:bg-slate-900/80">
+
+                    <div class="text-sm text-slate-500">
+                        Customer Rating
+                    </div>
+
+                    <div class="mt-2 flex items-center gap-2">
+
+                        <span class="text-3xl font-bold text-blue-600">
+                            4.9
+                        </span>
+
+                        <span class="text-yellow-400 text-xl">
+                            ★★★★★
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <!-- Card 2 -->
-                <div class="absolute -bottom-6 -right-6 rounded-2xl bg-white p-5 shadow-xl dark:bg-slate-800">
-                    <p class="text-sm text-slate-500">📦 Same Day Printing</p>
-                    <h3 class="text-2xl font-bold text-green-600">Available</h3>
+                <!-- Floating Card -->
+                <div class="absolute bottom-6 right-6 rounded-2xl bg-white/90 p-5 shadow-2xl backdrop-blur dark:bg-slate-900/80">
+
+                    <div class="text-sm text-slate-500">
+                        Same Day Printing
+                    </div>
+
+                    <div class="mt-2 text-2xl font-bold text-green-600">
+                        Available
+                    </div>
+
                 </div>
 
             </div>
@@ -362,10 +398,8 @@
         </div>
 
     </div>
+
 </section>
-
-
-
 
 <!-- ================= OUR SERVICES ================= -->
 <section class="bg-white py-20 dark:bg-slate-900">
