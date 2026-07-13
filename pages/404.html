@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="mask-icon" href="assets/img/favicon.svg" color="#1F7E38" />
+  <meta name="theme-color" content="#1F7E38" />
+  <title>Page Not Found (404) | FreshMart</title>
+  <meta name="description" content="The page you're looking for has been moved or no longer exists. Let's get you back to fresh groceries." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- TailwindCSS (Play CDN) + shared config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/js/tw-config.js"></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="/assets/css/rtl.css" />
+  <style>
+    .err { min-height: 100vh; display: grid; place-items: center; position: relative; overflow: hidden; padding: 80px 24px; background: var(--white); }
+    .err-bg {
+      position: absolute; inset: 0; display: grid; place-items: center;
+      font-family: 'Playfair Display', Georgia, serif; font-weight:600; line-height: 1;
+      font-size: clamp(14rem, 58vw, 46rem); color: var(--cream-dark); opacity: 0.55;
+      z-index: 0; user-select: none; pointer-events: none; white-space: nowrap; letter-spacing: 0.04em;
+    }
+    .err-inner { position: relative; z-index: 1; text-align: center; max-width: 680px; }
+    .err-eyebrow { font-size: 0.78rem; font-weight:600; letter-spacing: 0.36em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 22px; }
+    .err-title {
+      font-family: 'Playfair Display', Georgia, serif; font-variant: small-caps; font-weight: 600;
+      letter-spacing: 0.015em; color: var(--dark); font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.06; margin: 0;
+    }
+    .err-title em { font-variant: normal; font-style: italic; color: var(--primary); }
+    .err-divider { width: 70px; height: 2px; background: var(--dark); opacity: 0.55; margin: 30px auto; }
+    .err-text { color: var(--text-muted); font-size: 1.05rem; line-height: 1.75; max-width: 440px; margin: 0 auto 40px; }
+    .err-actions { display: flex; gap: 28px; align-items: center; justify-content: center; flex-wrap: wrap; }
+    .err-btn {
+      display: inline-block; background: var(--dark); color: #fff; padding: 16px 44px;
+      font-size: 0.78rem; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase;
+      border: 1px solid var(--dark); transition: all 0.25s ease;
+    }
+    .err-btn:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .err-link {
+      font-size: 0.78rem; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--text-muted); transition: color 0.25s ease;
+    }
+    .err-link:hover { color: var(--dark); }
+    .dark .err-btn { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .dark .err-btn:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+    .dark .err-divider { background: #E8F3EA; }
+    .dark .err-link:hover { color: #E8F3EA; }
+  </style>
+</head>
+<body>
+  <div class="err">
+    <div class="err-bg" aria-hidden="true">404</div>
+    <div class="err-inner">
+      <div class="err-eyebrow">Aisle Not Found</div>
+      <h1 class="err-title">Lost in the <em>Aisles</em></h1>
+      <div class="err-divider"></div>
+      <p class="err-text">The page you're looking for has vanished from our shelves. Allow us to lead you back to the fresh stuff.</p>
+      <div class="err-actions">
+        <a href="/pages/index.html" class="err-btn">Return Home</a>
+        <a href="/pages/departments.html" class="err-link">Browse Departments</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="theme-toggle" aria-label="Toggle dark mode" style="position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--white);z-index:50;box-shadow:0 6px 20px var(--shadow);">
+    <i class="fas fa-moon" aria-hidden="true"></i>
+  </button>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

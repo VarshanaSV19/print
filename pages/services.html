@@ -172,7 +172,7 @@
 
                         <div
                             class="absolute left-0 top-10 z-50 hidden w-72 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl group-hover:block group-focus-within:block dark:border-slate-700 dark:bg-slate-900">
-                            <a href="index.html"
+                            <a href="../index.html"
                                 class="mb-3 block rounded-xl p-4 transition hover:bg-slate-100 dark:hover:bg-slate-800">
                                 <h4 class="font-semibold">Home 1</h4>
                                 <p class="mt-1 text-sm text-slate-500">Corporate Print Shop</p>
@@ -235,7 +235,7 @@
             <!-- Mobile Menu (hidden by default) -->
             <div id="mobile-menu" class="mt-4 hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-lg dark:border-slate-800 dark:bg-slate-900 lg:hidden">
                 <ul class="space-y-4">
-                    <li><a href="index.html" class="block font-medium">Home</a></li>
+                    <li><a href="../index.html" class="block font-medium">Home</a></li>
                     <li><a href="services.html" class="block font-medium">Services</a></li>
                     <li><a href="blogs.html" class="block font-medium">Blogs</a></li>
                     <li><a href="about.html" class="block font-medium">About</a></li>
@@ -247,20 +247,6 @@
             </div>
 
         </div>
-
-<script>
-if (
-    localStorage.getItem("theme") === "dark" ||
-    (!localStorage.getItem("theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-    document.documentElement.classList.add("dark");
-} else {
-    document.documentElement.classList.remove("dark");
-}
-</script>
-
-
 
     </header>
 
@@ -274,134 +260,134 @@ if (
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
-<!-- Spacer -->
-<div class="h-30"></div>
 
 
 
 
 
-<!-- Blog Hero -->
 
-<section class="py-0 bg-white relative overflow-hidden dark:bg-slate-950">
-    <!-- Background Glow -->
-    <div class="absolute inset-0">
-        <div class="absolute top-20 left-1/3 w-96 h-96 bg-indigo-600/20 blur-3xl rounded-full"></div>
-        <div class="absolute bottom-0 right-20 w-80 h-80 bg-purple-600/20 blur-3xl rounded-full"></div>
-    </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 py-24">
+<!-- ================= HERO SECTION ================= -->
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
 
-        
-        <!-- Heading -->
-        <div class="max-w-4xl mx-auto text-center mt-8">
+    <!-- Background Blur -->
+    <div class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-blue-400/20 blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-indigo-400/20 blur-3xl"></div>
 
-            <h1 class="text-5xl md:text-7xl font-black leading-tight">
-                Ideas Worth
-                <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
-                    Printing
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+
+        <div class="grid items-center gap-14 lg:grid-cols-2">
+
+            <!-- LEFT -->
+            <div>
+
+                <span class="inline-flex items-center gap-2 rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                    🚀 Fast • Affordable • Professional
                 </span>
-            </h1>
 
-            <p class="mt-8 text-xl text-gray-400 leading-8 max-w-2xl mx-auto">
-                Design inspiration, branding strategies, printing guides, and
-                practical tips to help your next project stand out.
-            </p>
+                <h1 class="mt-6 text-5xl font-extrabold leading-tight text-slate-900 dark:text-white lg:text-7xl">
+                    Premium
+                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                        Printing
+                    </span>
+                    Solutions
+                    <br>
+                    For Everyone
+                </h1>
 
-        </div>
+                <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-400">
+                    Print documents, business cards, banners, posters and custom products
+                    with lightning-fast delivery and unbeatable quality.
+                </p>
 
-        <!-- Search -->
-        <div class="max-w-2xl mx-auto mt-12">
+                <!-- Buttons -->
+                <div class="mt-10 flex flex-wrap gap-4">
 
-            <div class="flex items-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-2">
+                    <a href="#"
+                        class="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-1 hover:bg-blue-700">
+                        Upload Files →
+                    </a>
 
-                <input
-                    type="text"
-                    placeholder="Search articles..."
-                    class="flex-1 bg-transparent px-5 py-3 text-white placeholder-gray-500 outline-none">
+                    <a href="#"
+                        class="rounded-xl border border-slate-300 bg-white px-8 py-4 font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
+                        View Pricing
+                    </a>
 
-                <button
-                    class="rounded-xl bg-indigo-600 px-7 py-3 font-semibold hover:bg-indigo-700 transition">
-                    Search
-                </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="mt-14 grid grid-cols-3 gap-6">
+
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            10K+
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
+                            Orders Completed
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            99%
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
+                            Happy Customers
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl bg-white p-5 shadow-lg dark:bg-slate-800">
+                        <h2 class="text-3xl font-bold text-blue-600">
+                            24/7
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
+                            Support
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
-        </div></section>
+            <!-- RIGHT -->
+            <div class="relative">
 
-        <!-- Categories -->
-        <div class="flex flex-wrap justify-center gap-4 mt-10">
+                <!-- Main Image -->
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
+                    alt=""
+                    class="rounded-[32px] shadow-2xl ring-8 ring-white dark:ring-slate-800">
 
-            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
-                Printing
-            </button>
+                <!-- Floating Card -->
+                <div class="absolute left-6 top-6 rounded-2xl bg-white/90 p-5 shadow-2xl backdrop-blur dark:bg-slate-900/80">
 
-            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
-                Design
-            </button>
+                    <div class="text-sm text-slate-500">
+                        Customer Rating
+                    </div>
 
-            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
-                Branding
-            </button>
+                    <div class="mt-2 flex items-center gap-2">
 
-            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
-                Business
-            </button>
-
-            <button class="rounded-full border border-white/10 bg-white/5 px-5 py-2 hover:bg-indigo-600 transition">
-                Marketing
-            </button>
-
-        </div>
-
-        <!-- Featured Card -->
-        <div class="max-w-5xl mx-auto mt-20">
-
-            <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 md:p-10">
-
-                <div class="flex flex-col lg:flex-row justify-between gap-8">
-
-                    <div class="lg:w-2/3">
-
-                        <span class="inline-block rounded-full bg-indigo-500/20 px-4 py-2 text-sm text-indigo-300">
-                            🔥 Featured This Week
+                        <span class="text-3xl font-bold text-blue-600">
+                            4.9
                         </span>
 
-                        <h2 class="mt-6 text-4xl font-bold leading-tight">
-                            10 Design Mistakes That Make Your Prints Look Unprofessional
-                        </h2>
-
-                        <p class="mt-5 text-gray-400 leading-8">
-                            Discover the small design decisions that have the biggest
-                            impact on print quality and learn how professionals prepare
-                            files for flawless results.
-                        </p>
-
-                        <a href="#"
-                            class="inline-flex items-center gap-2 mt-8 text-indigo-400 font-semibold hover:text-indigo-300">
-                            Read Article →
-                        </a>
+                        <span class="text-yellow-400 text-xl">
+                            ★★★★★
+                        </span>
 
                     </div>
 
-                    <!-- Stats -->
-                    <div class="lg:w-64 flex flex-col gap-5">
+                </div>
 
-                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
-                            <p class="text-gray-500 text-sm">Read Time</p>
-                            <h3 class="text-3xl font-bold mt-2">8 Min</h3>
-                        </div>
+                <!-- Floating Card -->
+                <div class="absolute bottom-6 right-6 rounded-2xl bg-white/90 p-5 shadow-2xl backdrop-blur dark:bg-slate-900/80">
 
-                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
-                            <p class="text-gray-500 text-sm">Articles</p>
-                            <h3 class="text-3xl font-bold mt-2">120+</h3>
-                        </div>
+                    <div class="text-sm text-slate-500">
+                        Same Day Printing
+                    </div>
 
-                        <div class="rounded-2xl bg-white/5 p-5 border border-white/10">
-                            <p class="text-gray-500 text-sm">Readers</p>
-                            <h3 class="text-3xl font-bold mt-2">15K+</h3>
-                        </div>
-
+                    <div class="mt-2 text-2xl font-bold text-green-600">
+                        Available
                     </div>
 
                 </div>
@@ -414,312 +400,396 @@ if (
 
 </section>
 
+<!-- ================= OUR SERVICES ================= -->
+<section class="bg-white py-20 dark:bg-slate-900">
+    <div class="mx-auto max-w-7xl px-6">
 
-
-
-
-<!------------------------>
-<!-- ================= FEATURED BLOG ================= -->
-<section class="py-24 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto">
-
+        <!-- Section Heading -->
+        <div class="mx-auto max-w-3xl text-center">
             <span
-                class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-5 py-2 rounded-full font-semibold">
-
-                <i class="fa-solid fa-newspaper"></i>
-                Featured Article
-
+                class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                Our Services
             </span>
 
-            <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-slate-900">
-                Learn More About Professional Printing
+            <h2 class="mt-6 text-4xl font-bold text-slate-900 dark:text-white">
+                Everything You Need for Professional Printing
             </h2>
 
-            <p class="mt-5 text-lg text-slate-600 leading-8">
-                Discover expert tips, printing guides, and creative ideas to make every print look perfect.
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                From everyday documents to large-format banners, we provide
+                high-quality printing solutions for students, professionals,
+                and businesses.
             </p>
-
         </div>
 
-        <!-- Featured Card -->
-        <div
-            class="mt-16 grid lg:grid-cols-2 gap-10 items-center bg-slate-50 rounded-[35px] overflow-hidden shadow-xl">
+        <!-- Services Grid -->
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-            <!-- Image -->
-            <div class="overflow-hidden">
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
 
-                <img src="print/p24.jpg"
-                    alt="Featured Blog"
-                    class="w-full h-full object-cover hover:scale-110 transition duration-700">
+                <div class="mb-6 text-5xl">📄</div>
+
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Document Printing
+                </h3>
+
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    High-quality black & white and color printing for reports,
+                    assignments, invoices, and office documents.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
 
             </div>
 
-            <!-- Content -->
-            <div class="p-10">
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
 
-                <span
-                    class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm">
+                <div class="mb-6 text-5xl">📚</div>
 
-                    <i class="fa-solid fa-book-open"></i>
-                    Printing Guide
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Book & Thesis Binding
+                </h3>
 
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    Spiral, hardbound, and softbound printing for projects,
+                    dissertations, and presentations.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
+
+            </div>
+
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
+
+                <div class="mb-6 text-5xl">💼</div>
+
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Business Printing
+                </h3>
+
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    Premium business cards, brochures, flyers, letterheads,
+                    invoices, and marketing materials.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
+
+            </div>
+
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
+
+                <div class="mb-6 text-5xl">🖼️</div>
+
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Posters & Banners
+                </h3>
+
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    Eye-catching posters, banners, flex prints, and signage
+                    for events, promotions, and businesses.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
+
+            </div>
+
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
+
+                <div class="mb-6 text-5xl">🖨️</div>
+
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Custom Printing
+                </h3>
+
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    Personalized printing on mugs, T-shirts, photo frames,
+                    calendars, and promotional products.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
+
+            </div>
+
+            <!-- Card -->
+            <div
+                class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
+
+                <div class="mb-6 text-5xl">🚚</div>
+
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Delivery Service
+                </h3>
+
+                <p class="mt-4 text-slate-600 dark:text-slate-400">
+                    Get your printed materials delivered safely and quickly to
+                    your home, office, or campus.
+                </p>
+
+                <a href="#" class="mt-6 inline-block font-semibold text-blue-600 hover:underline">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="bg-slate-50 py-20 dark:bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6">
+
+        <div class="grid items-center gap-16 lg:grid-cols-2">
+
+            <!-- Left Image -->
+            <div class="relative">
+
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+                    alt="Printing Shop"
+                    class="rounded-3xl shadow-2xl">
+
+                <!-- Floating Card -->
+                <div class="absolute -bottom-8 left-8 rounded-2xl bg-white p-6 shadow-xl dark:bg-slate-800">
+
+                    <h3 class="text-3xl font-bold text-blue-600">
+                        10+
+                    </h3>
+
+                    <p class="mt-1 text-slate-600 dark:text-slate-400">
+                        Years of Printing Excellence
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right Content -->
+            <div>
+
+                <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                    Why Choose Us
                 </span>
 
-                <h3 class="mt-6 text-4xl font-bold text-slate-900 leading-tight">
-                    10 Expert Tips to Get Better Printing Results Every Time
-                </h3>
+                <h2 class="mt-6 text-4xl font-bold text-slate-900 dark:text-white">
+                    Quality Printing You Can Trust
+                </h2>
 
-                <p class="mt-6 text-slate-600 leading-8">
-                    Learn how to choose the right paper, prepare print-ready files,
-                    select the perfect colors, and avoid common printing mistakes.
+                <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
+                    At PrintCraft, we combine premium printing technology,
+                    expert craftsmanship, and exceptional customer service
+                    to ensure every project exceeds expectations.
                 </p>
 
-                <!-- Info -->
-                <div class="flex flex-wrap gap-6 mt-8">
+                <!-- Features -->
+                <div class="mt-10 space-y-6">
 
-                    <div class="flex items-center gap-2 text-slate-600">
-                        <i class="fa-solid fa-calendar text-blue-600"></i>
-                        July 2026
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-xl text-white">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">
+                                Premium Print Quality
+                            </h3>
+
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                Sharp colors, crisp text, and durable materials for every order.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="flex items-center gap-2 text-slate-600">
-                        <i class="fa-solid fa-clock text-blue-600"></i>
-                        5 Min Read
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-600 text-xl text-white">
+                            ⚡
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">
+                                Fast Turnaround
+                            </h3>
+
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                Same-day and next-day printing available for selected services.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="flex items-center gap-2 text-slate-600">
-                        <i class="fa-solid fa-user text-blue-600"></i>
-                        Print Expert
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-500 text-xl text-white">
+                            💰
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">
+                                Affordable Pricing
+                            </h3>
+
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                Competitive prices with no compromise on quality.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-600 text-xl text-white">
+                            🚚
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">
+                                Safe & Reliable Delivery
+                            </h3>
+
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                We deliver your printed products securely and on time.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
-
-                <!-- Button -->
-                <a href="#"
-                    class="inline-flex items-center gap-3 mt-10 bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 rounded-xl font-semibold transition">
-
-                    Read Full Article
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
 
             </div>
 
         </div>
 
     </div>
-
 </section>
-<!-- ================= END FEATURED BLOG ================= -->
-<!---------------------->>
 
-<!-- ========================= -->
-<!-- Free Resources -->
-<!-- ========================= -->
 
-<section class="py-24 bg-slate-50 dark:bg-slate-950">
 
-    <div class="max-w-7xl mx-auto px-6">
+
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="bg-white py-20 dark:bg-slate-900">
+    <div class="mx-auto max-w-7xl px-6">
 
         <!-- Heading -->
-        <div class="text-center mb-14">
+        <div class="mx-auto max-w-3xl text-center">
 
-            <span class="inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-900/30 dark:text-blue-300">
-                FREE DOWNLOADS
+            <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                How It Works
             </span>
 
-            <h2 class="mt-5 text-4xl font-bold text-slate-900 dark:text-white">
-                Free Printing Resources
+            <h2 class="mt-6 text-4xl font-bold text-slate-900 dark:text-white">
+                Print in 4 Simple Steps
             </h2>
 
-            <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-400">
-                Download professional templates and guides to make your
-                printing projects faster, easier, and more professional.
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                We've made professional printing quick and hassle-free.
+                Just follow these four easy steps.
             </p>
 
         </div>
 
-        <!-- Cards -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Steps -->
+        <div class="relative mt-20">
 
-            <!-- Card 1 -->
-            <div class="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl dark:bg-slate-900">
+            <!-- Connecting Line -->
+            <div class="absolute left-0 right-0 top-12 hidden h-1 bg-blue-100 lg:block"></div>
 
-                <div class="h-16 w-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl text-blue-600">
-                    <i class="fa-solid fa-file-pdf"></i>
-                </div>
+            <div class="grid gap-10 lg:grid-cols-4">
 
-                <h3 class="mt-6 text-xl font-bold dark:text-white">
-                    Flyer Template
-                </h3>
+                <!-- Step 1 -->
+                <div class="relative text-center">
 
-                <p class="mt-3 text-slate-600 dark:text-slate-400">
-                    Ready-to-edit flyer template for business promotions.
-                </p>
+                    <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-blue-600 text-4xl text-white shadow-lg">
+                        📤
+                    </div>
 
-                <a href="#"
-                    class="mt-6 inline-block rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700">
-                    Download
-                </a>
+                    <div class="absolute left-1/2 top-24 hidden h-5 w-5 -translate-x-1/2 rounded-full bg-blue-600 lg:block"></div>
 
-            </div>
-
-            <!-- Card 2 -->
-            <div class="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl dark:bg-slate-900">
-
-                <div class="h-16 w-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl text-green-600">
-                    <i class="fa-solid fa-id-card"></i>
-                </div>
-
-                <h3 class="mt-6 text-xl font-bold dark:text-white">
-                    Business Card
-                </h3>
-
-                <p class="mt-3 text-slate-600 dark:text-slate-400">
-                    Modern business card template for professionals.
-                </p>
-
-                <a href="#"
-                    class="mt-6 inline-block rounded-xl bg-green-600 px-5 py-3 font-semibold text-white hover:bg-green-700">
-                    Download
-                </a>
-
-            </div>
-
-            <!-- Card 3 -->
-            <div class="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl dark:bg-slate-900">
-
-                <div class="h-16 w-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl text-purple-600">
-                    <i class="fa-solid fa-image"></i>
-                </div>
-
-                <h3 class="mt-6 text-xl font-bold dark:text-white">
-                    Poster Design
-                </h3>
-
-                <p class="mt-3 text-slate-600 dark:text-slate-400">
-                    Creative poster layout for events and promotions.
-                </p>
-
-                <a href="#"
-                    class="mt-6 inline-block rounded-xl bg-purple-600 px-5 py-3 font-semibold text-white hover:bg-purple-700">
-                    Download
-                </a>
-
-            </div>
-
-            <!-- Card 4 -->
-            <div class="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl dark:bg-slate-900">
-
-                <div class="h-16 w-16 rounded-2xl bg-orange-100 flex items-center justify-center text-3xl text-orange-600">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
-
-                <h3 class="mt-6 text-xl font-bold dark:text-white">
-                    Print Guide
-                </h3>
-
-                <p class="mt-3 text-slate-600 dark:text-slate-400">
-                    Learn how to prepare files for perfect printing.
-                </p>
-
-                <a href="#"
-                    class="mt-6 inline-block rounded-xl bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700">
-                    Download
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-<!-- Newsletter Section -->
-<section class="py-24 bg-gray-950 relative overflow-hidden">
-
-    <!-- Background Glow -->
-    <div class="absolute inset-0">
-        <div class="absolute -top-20 left-1/4 w-96 h-96 bg-indigo-600/20 blur-3xl rounded-full"></div>
-        <div class="absolute bottom-0 right-20 w-80 h-80 bg-pink-600/20 blur-3xl rounded-full"></div>
-    </div>
-
-    <div class="relative max-w-5xl mx-auto px-6">
-
-        <div class="rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl p-12 text-center">
-
-            <!-- Badge -->
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/20 text-indigo-300 text-sm">
-                ✉️ Join Our Community
-            </span>
-
-            <!-- Heading -->
-            <h2 class="mt-6 text-4xl md:text-5xl font-bold text-white">
-                Never Miss a Printing Tip
-            </h2>
-
-            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400 leading-8">
-                Get fresh design inspiration, professional printing advice,
-                exclusive offers, and new blog posts delivered directly to
-                your inbox.
-            </p>
-
-            <!-- Form -->
-            <form class="mt-10 flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
-
-                <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    class="flex-1 rounded-2xl bg-white/10 border border-white/10 px-6 py-4 text-white placeholder-gray-500 outline-none focus:border-indigo-500">
-
-                <button
-                    class="rounded-2xl bg-indigo-600 px-8 py-4 font-semibold text-white hover:bg-indigo-700 transition">
-                    Subscribe
-                </button>
-
-            </form>
-
-            <!-- Benefits -->
-            <div class="grid md:grid-cols-3 gap-6 mt-12">
-
-                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
-                    <div class="text-3xl">📚</div>
-                    <h3 class="mt-4 font-semibold text-white">
-                        Weekly Articles
+                    <h3 class="mt-8 text-2xl font-bold text-slate-900 dark:text-white">
+                        Upload Files
                     </h3>
-                    <p class="mt-2 text-sm text-gray-400">
-                        Practical printing and design tips every week.
+
+                    <p class="mt-3 text-slate-600 dark:text-slate-400">
+                        Upload your PDF, DOCX, PPT, images, or design files securely.
                     </p>
+
                 </div>
 
-                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
-                    <div class="text-3xl">🎁</div>
-                    <h3 class="mt-4 font-semibold text-white">
-                        Exclusive Offers
+                <!-- Step 2 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-green-600 text-4xl text-white shadow-lg">
+                        ⚙️
+                    </div>
+
+                    <div class="absolute left-1/2 top-24 hidden h-5 w-5 -translate-x-1/2 rounded-full bg-green-600 lg:block"></div>
+
+                    <h3 class="mt-8 text-2xl font-bold text-slate-900 dark:text-white">
+                        Choose Options
                     </h3>
-                    <p class="mt-2 text-sm text-gray-400">
-                        Subscriber-only discounts and special promotions.
+
+                    <p class="mt-3 text-slate-600 dark:text-slate-400">
+                        Select paper size, color, binding, quantity, and finishing options.
                     </p>
+
                 </div>
 
-                <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
-                    <div class="text-3xl">🚀</div>
-                    <h3 class="mt-4 font-semibold text-white">
-                        Early Access
+                <!-- Step 3 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-500 text-4xl text-white shadow-lg">
+                        🖨️
+                    </div>
+
+                    <div class="absolute left-1/2 top-24 hidden h-5 w-5 -translate-x-1/2 rounded-full bg-yellow-500 lg:block"></div>
+
+                    <h3 class="mt-8 text-2xl font-bold text-slate-900 dark:text-white">
+                        We Print
                     </h3>
-                    <p class="mt-2 text-sm text-gray-400">
-                        Be the first to read our newest guides and tutorials.
+
+                    <p class="mt-3 text-slate-600 dark:text-slate-400">
+                        Our team prints your order using high-quality equipment and premium materials.
                     </p>
+
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-600 text-4xl text-white shadow-lg">
+                        🚚
+                    </div>
+
+                    <div class="absolute left-1/2 top-24 hidden h-5 w-5 -translate-x-1/2 rounded-full bg-purple-600 lg:block"></div>
+
+                    <h3 class="mt-8 text-2xl font-bold text-slate-900 dark:text-white">
+                        Pickup / Delivery
+                    </h3>
+
+                    <p class="mt-3 text-slate-600 dark:text-slate-400">
+                        Collect your order from our shop or have it delivered to your doorstep.
+                    </p>
+
                 </div>
 
             </div>
@@ -727,10 +797,7 @@ if (
         </div>
 
     </div>
-
 </section>
-
-
 
 
 
@@ -863,7 +930,6 @@ Footer Section Start
                     <li><a href="index.html" class="transition hover:text-blue-400">Home</a></li>
                     <li><a href="about.html" class="transition hover:text-blue-400">About Us</a></li>
                     <li><a href="services.html" class="transition hover:text-blue-400">Services</a></li>
-                    
                     <li><a href="contact.html" class="transition hover:text-blue-400">Contact</a></li>
 
                 </ul>
@@ -942,7 +1008,10 @@ Footer Section End
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    <script>
+
+ <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+<script>
 const rtlBtn = document.getElementById("rtl-toggle");
 
 function applyDirection(dir) {
@@ -997,13 +1066,19 @@ themeToggle.addEventListener("click", () => {
 });
 </script>
 
-</script>
-<script>const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+
+
+<script>
+const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
-mobileMenuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
 </script>
 </body>
 </html>
+
+
+
+
