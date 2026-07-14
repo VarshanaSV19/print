@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote | PrintCraft</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-white to-indigo-100 min-h-screen py-16">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+
+            <span
+                class="inline-flex items-center gap-2 rounded-full bg-blue-100 text-blue-700 px-5 py-2 font-semibold">
+                <i class="fa-solid fa-file-invoice"></i>
+                Request a Quote
+            </span>
+
+            <h1 class="text-5xl font-bold text-slate-800 mt-5">
+                Get Your Printing Quote
+            </h1>
+
+            <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
+                Tell us about your printing requirements and we'll send you
+                a personalized quotation within 24 hours.
+            </p>
+
+        </div>
+
+        <!-- Form Card -->
+        <div class="bg-white rounded-3xl shadow-2xl p-10">
+
+            <form class="grid md:grid-cols-2 gap-6">
+
+                <!-- Name -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                        placeholder="John Doe"
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                        placeholder="john@example.com"
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                        placeholder="+91 XXXXX XXXXX"
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Service -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Printing Service
+                    </label>
+
+                    <select
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                        <option>Select Service</option>
+                        <option>Document Printing</option>
+                        <option>Business Cards</option>
+                        <option>Flyers</option>
+                        <option>Brochures</option>
+                        <option>Posters</option>
+                        <option>Banners</option>
+                        <option>Photo Printing</option>
+                        <option>Book Printing</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Quantity -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Quantity
+                    </label>
+
+                    <input type="number"
+                        placeholder="500"
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Paper Size -->
+                <div>
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Paper Size
+                    </label>
+
+                    <select
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                        <option>Select Size</option>
+                        <option>A4</option>
+                        <option>A3</option>
+                        <option>A5</option>
+                        <option>Letter</option>
+                        <option>Legal</option>
+                        <option>Custom Size</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Project Details -->
+                <div class="md:col-span-2">
+
+                    <label class="block mb-2 font-semibold text-slate-700">
+                        Project Details
+                    </label>
+
+                    <textarea rows="6"
+                        placeholder="Describe your printing requirements..."
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+
+                </div>
+
+                <!-- Button -->
+                <div class="md:col-span-2">
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white py-4 rounded-xl text-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl">
+
+                        <i class="fa-solid fa-paper-plane mr-2"></i>
+                        Get Quote
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
