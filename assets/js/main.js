@@ -49,3 +49,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+const rtlBtn = document.getElementById("rtl-toggle");
+
+function applyDirection(dir) {
+    document.documentElement.setAttribute("dir", dir);
+
+    if (dir === "rtl") {
+        rtlBtn.textContent = "LTR";
+    } else {
+        rtlBtn.textContent = "RTL";
+    }
+}
+
+const savedDir = localStorage.getItem("direction") || "ltr";
+applyDirection(savedDir);
+
+rtlBtn.addEventListener("click", () => {
+    const newDir =
+        document.documentElement.getAttribute("dir") === "ltr"
+            ? "rtl"
+            : "ltr";
+
+    localStorage.setItem("direction", newDir);
+    applyDirection(newDir);
+});
